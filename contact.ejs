@@ -1,0 +1,36 @@
+<%- include("partials/header"); -%>
+
+<h1>Contact Page </h1>
+<h2><%= contactContent %></h3>
+
+<div class="container">
+    <form  action="contact" method="post">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="Russia">Russia</option>
+        <option value="India">India</option>
+        <option value="Bangladesh">Bangladesh</option>
+        <option value="South Korea">South Korea</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Ukrain">Ukrain</option>
+      </select>
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit" name="sub">
+  
+    </form>
+  </div>
+
